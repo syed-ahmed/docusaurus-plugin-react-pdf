@@ -1,0 +1,43 @@
+{
+  "name": "@syed-ahmed/plugin-react-pdf",
+  "version": "2.0.0-beta.17",
+  "description": "Docusaurus Plugin to render pdf.",
+  "main": "lib/index.js",
+  "types": "src/plugin-react-pdf.d.ts",
+  "scripts": {
+    "build": "yarn build:server && yarn build:browser && yarn build:copy && yarn build:format",
+    "build:server": "tsc --project tsconfig.server.json",
+    "build:browser": "tsc --project tsconfig.browser.json",
+    "build:copy": "node copyUntypedFiles.mjs",
+    "build:format": "prettier --config .prettierrc --write \"lib/**/*.js\""
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syed-ahmed/docusaurus-plugin-react-pdf.git",
+    "directory": "packages/docusaurus-plugin-react-pdf"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-beta.17",
+    "prettier": "^2.6.1",
+    "react-pdf": "^5.7.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3",
+    "webpack": "^5.70.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "2.0.0-beta.17",
+    "@docusaurus/types": "2.0.0-beta.17",
+    "fs-extra": "^10.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.4 || ^17.0.0",
+    "react-dom": "^16.8.4 || ^17.0.0"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
