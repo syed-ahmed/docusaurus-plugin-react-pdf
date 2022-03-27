@@ -21,7 +21,7 @@ module.exports = {
 ## Usage
 
 ```jsx
-import ReactPdf from '@theme/ReactPdf';
+import ReactPdf from '@syed-ahmed/plugin-react-pdf/lib/theme/ReactPdf';
 
 <ReactPdf pdf={require('./path/to/doc.pdf').default}/>
 ```
