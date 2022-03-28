@@ -1,6 +1,6 @@
 {
   "name": "@syed-ahmed/docusaurus-plugin-react-pdf",
-  "version": "2.0.0-beta.19",
+  "version": "2.0.0-beta.20",
   "description": "Docusaurus Plugin to render pdf.",
   "main": "lib/index.js",
   "types": "src/plugin-react-pdf.d.ts",
