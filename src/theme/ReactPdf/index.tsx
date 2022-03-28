@@ -6,9 +6,7 @@ import {Document, Page} from 'react-pdf/dist/esm/entry.webpack5';
 import type {ComponentProps} from 'react';
 
 export default function ReactPdf(props: ComponentProps<any>): JSX.Element {
-  const {pdf} = props;
-  const [numPages, setNumPages] = React.useState<number>(0);
-  const [pageNumber, setPageNumber] = React.useState(1);
+  const {pdf, numPages, setNumPages, pageNumber, setPageNumber} = props;
   
   function onDocumentLoadSuccess({numPages}: {numPages: number}) {
     setNumPages(numPages);
